@@ -1,1 +1,229 @@
+In [23]: n=5
 
+In [24]: for i in range(n):
+    ...:     print(i)
+    ...:
+0
+1
+2
+3
+4
+
+In [25]: for i in range(0,10):
+    ...:     print(i)
+    ...:
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+In [26]: for i in range(0,6)
+  Cell In[26], line 1
+    for i in range(0,6)
+                       ^
+SyntaxError: expected ':'
+
+
+In [27]: for i in range(0,6):
+    ...:     print('*')
+    ...:
+*
+*
+*
+*
+*
+*
+
+In [28]: for i in range(0,6):
+    ...:     print('*',' ')
+    ...:
+*
+*
+*
+*
+*
+*
+
+In [29]: for i in range(0,6):
+    ...:     print('*',end='')
+    ...:
+******
+In [30]: for i in range(0,6):
+    ...:     print(i,end='')
+    ...:
+012345
+In [31]: for i in range(0,6):
+    ...:     print(i*n)
+    ...:
+0
+5
+10
+15
+20
+25
+
+In [32]: for i in range(n):
+    ...:     print('*'*n)
+    ...:
+*****
+*****
+*****
+*****
+*****
+
+In [33]: for i in range(n):
+    ...:     print('*'(i+1))
+<>:2: SyntaxWarning: 'str' object is not callable; perhaps you missed a comma?
+<ipython-input-33-83480b69ef2e>:2: SyntaxWarning: 'str' object is not callable; perhaps you missed a comma?
+  print('*'(i+1))
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+Cell In[33], line 2
+      1 for i in range(n):
+----> 2     print('*'(i+1))
+
+TypeError: 'str' object is not callable
+
+In [34]: for i in range(n):
+    ...:     print('* ',*n)
+    ...:
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+Cell In[34], line 2
+      1 for i in range(n):
+----> 2     print('* ',*n)
+
+TypeError: Value after * must be an iterable, not int
+
+In [35]: for i in range(n):
+    ...:     print('* '*n)
+    ...:
+* * * * *
+* * * * *
+* * * * *
+* * * * *
+* * * * *
+
+In [36]: for i in range(n):
+    ...:     print(('*'+'')*(i+1))
+    ...:
+*
+**
+***
+****
+*****
+
+In [37]: for i in range(n):
+    ...:     print((chr(65+i)+'')*(i+1))
+    ...:
+    ...:
+    ...:
+    ...:
+A
+BB
+CCC
+DDDD
+EEEEE
+
+In [38]: for i in range(n):
+    ...:     print((chr(65)+"")*(i+1))
+    ...:
+A
+AA
+AAA
+AAAA
+AAAAA
+
+In [39]: for i in range(n):
+    ...:     print((chr(65)+"")*(i-1))
+    ...:
+
+
+A
+AA
+AAA
+
+In [40]: for i in range(n):
+    ...:     print((chr(65)+"")*(n-1))
+    ...:
+AAAA
+AAAA
+AAAA
+AAAA
+AAAA
+
+In [41]: for i in range(n):
+    ...:     print((chr(65)+" ")*(n+1))
+    ...:
+A A A A A A
+A A A A A A
+A A A A A A
+A A A A A A
+A A A A A A
+
+In [42]: for i in range(n):
+    ...:     print((chr(65)+" ")*(i+1))
+    ...:
+A
+A A
+A A A
+A A A A
+A A A A A
+
+In [43]: for i in range(n):
+    ...:     print((('*')+' ')*(n-1))
+    ...:
+* * * *
+* * * *
+* * * *
+* * * *
+* * * *
+
+In [44]: for i in range(n):
+    ...:     print((('*')+' ')*(n-i))
+    ...:
+* * * * *
+* * * *
+* * *
+* *
+*
+
+In [45]: for i in range(n):
+    ...:     print((('*')+'')*(n-i))
+    ...:
+*****
+****
+***
+**
+*
+
+In [46]: for i in range(n):
+    ...:     print('*'*n,end='')
+    ...:
+*************************
+In [47]: for i in range(n):
+    ...:     print(chr(67)*n,end=" ")
+    ...:
+CCCCC CCCCC CCCCC CCCCC CCCCC
+In [48]: for i in range(n):
+    ...:     print(chr(67+i)*(i+1))
+    ...:
+C
+DD
+EEE
+FFFF
+GGGGG
+
+In [49]: for i in range(n):
+    ...:     print(chr(67+i)*(i+1),end='')
+    ...:
+    ...:
+    ...:
+CDDEEEFFFFGGGGG
+In [50]:
