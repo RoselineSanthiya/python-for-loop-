@@ -227,3 +227,21 @@ In [49]: for i in range(n):
     ...:
 CDDEEEFFFFGGGGG
 In [50]:
+
+In [51]: for i in range(n):
+    ...:     print(('*')*(i+1))
+    ...:
+*
+**
+***
+****
+*****
+
+In [52]: for i in range(n):
+    ...:     print(('* ')*(i+1))
+    ...:
+*
+* *
+* * *
+* * * *
+* * * * *
